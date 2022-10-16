@@ -41,3 +41,14 @@ print(vowels)
 
 # 4. 
 
+NumList = [0,1,2,-3,4,-6,-7,8,3,-10]
+
+posInts = list(filter(lambda x: True if x>0 else False, NumList))
+
+print("Positive integers in the list: ", posInts)
+
+#  5
+
+Change = list(filter(lambda x: x>0 ,map(lambda x: x*-1,NumList)))
+
+print("The Changed list: ", Change)
