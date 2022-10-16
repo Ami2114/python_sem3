@@ -55,7 +55,7 @@ def dup_letter(x):
 result=map(dup_letter,list1)
 print(list(result))
 
-# 6.Print table of any number
+# 6.Print table of any number (Error)
 
 num2=(input("Enter any number: "))
 b=[1,2,3,4,5,6,7,8,9,10]
@@ -78,12 +78,20 @@ print(list(res3))
 
 #  8.
 
+def float(k):
+    return int(k)
+
+result_=map(float,(1.2,22.2,1001.9,4.1))
+print(list(result_))
+
+# 9
+
+num3=(1,2,3,4,5,6,7,8,9)
+list_3=list(reversed(num3))
+print(list_3)
 
 
-
-
-#  10
-
+#  10 (Error)
 dict=(input("enter a name: "))
 res4=map(lambda i:(i[0]+"@gmail.com"),dict)
 print(dict(res4))
